@@ -18,8 +18,8 @@ This script can be used to fetch an abstract from research output in Pure, send 
 
 ### Executing program
 
-* Set PURE_API_KEY and CHATGPT_API_KEY as environment variables
-* Replace 'ResearchoutputUUID' with UUID of research output from Pure using your preferred method
+* Set your actual PURE_API_KEY and CHATGPT_API_KEY as environment variables
+* Replace 'ResearchoutputUUID' with UUID of research output(s) from Pure, using your preferred method
 * Run the script 
 ```
 ```
