@@ -4,7 +4,7 @@ import requests
 import os
 
 # Fetch the abstract from the Pure API
-input_api_url = "https://vbn.aau.dk/ws/api/research-outputs/79678cf3-dc6b-4387-b563-8f5c26facb9f"
+input_api_url = "https://vbn.aau.dk/ws/api/research-outputs/ResearchoutputUUID"
 api_key = os.environ.get('PURE_API_KEY', '')
 headers = {"api-key": api_key}
 
@@ -58,7 +58,7 @@ json_data = {
     ]
 }
 
-update_api_url = "https://vbn.aau.dk/ws/api/research-outputs/79678cf3-dc6b-4387-b563-8f5c26facb9f"
+update_api_url = "https://vbn.aau.dk/ws/api/research-outputs/ResearchoutputUUID"
 headers = {"accept": "application/json", "api-key": api_key, "Content-Type": "application/json"}
 
 response = requests.put(update_api_url, json=json_data, headers=headers)
